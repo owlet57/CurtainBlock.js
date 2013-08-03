@@ -7,6 +7,12 @@
 
 CurtainBlock.js was devised initially as a method to hide all the content on a given page from anyone who might come stumbling onto a given page and not be willing to see the content on it. I primarily think people will use this for like adult blogs or whatever.
 
+## Requirements
+
+* A browser that runs JS
+* localStorage support (most if not all modern browsers have this)
+* jQuery (I used 2.0.3 but you can use whatever)
+
 ## Features
 
 * Easy to add to your existing code
