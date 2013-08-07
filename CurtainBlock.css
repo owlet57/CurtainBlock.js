@@ -26,3 +26,11 @@
 .CurtainBlockAlert p {
 	text-align: justify;
 }
+
+.CurtainBlockConfirm {
+	display: none;
+}
+
+.CurtainBlockDeny {
+	display: none;
+}
