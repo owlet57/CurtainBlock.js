@@ -37,6 +37,8 @@ $(document).ready(function () {
 		if (complete === 0) {
 			$curtain.show();
 			$alert.fadeIn(500);
+			$confirm.css('display','none');
+			$deny.css('display','none');
 			$confirm.click(function () {
 				$curtain.fadeOut(750);
 				$alert.fadeOut(350);
