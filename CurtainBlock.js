@@ -3,7 +3,7 @@
 
 // Options for easy access and setup
 CurtainBlock = {
-  init: false,
+  	init: false,
 	options: {
 		persistent: false, // Set this false by default yeah
 		redir: 'about:blank'
@@ -16,7 +16,6 @@ CurtainBlock = {
 		}
 	}
 }
-localStorage.setItem("test", true);
 $(document).ready(function () {
 	// Setup!
 	$curtain = $('.CurtainBlock');
@@ -36,6 +35,7 @@ $(document).ready(function () {
 			};
 		};
 		if (complete === 0) {
+			$curtain.show();
 			$alert.fadeIn(500);
 			$confirm.click(function () {
 				$curtain.fadeOut(750);
@@ -48,10 +48,10 @@ $(document).ready(function () {
 				// Redir function
 				if (CurtainBlock.options.redir.length === 0) {
 					// Redirect to a blank page
-					window.location = "about:blank"
+					window.location.replace("about:blank")
 				} else {
 					// Redirect to a page the dev specifies in their setup (by putting a string into CurtainBlock.redir)
-					window.location = CurtainBlock.options.redir
+					window.location.replace(CurtainBlock.options.redir)
 				}
 			});
 		}
