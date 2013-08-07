@@ -36,6 +36,8 @@ $(document).ready(function () {
 		};
 		if (complete === 0) {
 			$curtain.show();
+			$confirm.show();
+   			$deny.show();
 			$alert.fadeIn(500);
 			$confirm.css('display','inline');
 			$deny.css('display','inline');
