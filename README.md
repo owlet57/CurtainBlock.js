@@ -32,6 +32,7 @@ And create the relevant divs and buttons:
 	<div class="CurtainBlock">
 		<div class="CurtainBlockAlert">
 			<!-- The Alert -->
+			<noscript>This website requires Javascript.</noscript>
 			<button class="CurtainBlockConfirm"></button>
 			<button class="CurtainBlockDeny"></button>
 		</div>
