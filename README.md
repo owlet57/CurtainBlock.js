@@ -55,16 +55,16 @@ Sets a url for CurtainBlock to redirect to in the event the user does not want t
 
 	CurtainBlock.options.redir = "http://blog.owlet57.com"
 
-### CurtainBlock.options.cookies
+### CurtainBlock.options.persistent
 
-Sets the use of cookies to either on or off, so you can avoid displaying alerts to users who have already visited and accepted the warning.
+Sets the use of persistence (via localStorage) to either on or off, so you can avoid displaying alerts to users who have already visited and accepted the warning.
 
 * **Default:** *false*
 * **Options:** *true, false*
 
 *Example:*
 	
-	CurtainBlock.options.cookies = true;
+	CurtainBlock.options.persistent = true;
 
 *** 
 

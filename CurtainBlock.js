@@ -8,13 +8,6 @@ CurtainBlock = {
 		persistent: false, // Set this false by default yeah
 		redir: 'about:blank'
 	},
-	start: function () {
-		if (CurtainBlock.init == true) {
-			return true;
-		} else {
-			return false;
-		}
-	}
 }
 $(document).ready(function () {
 	// Setup!
@@ -25,25 +18,28 @@ $(document).ready(function () {
 	complete = 0;
 	// Core CurtainBlock methods, including the start
 	// Checks that CurtainBlock.js is setup properly
-	if (CurtainBlock.start()) {
-		// Checks for a cookie and disables the curtain, if that option is toggled.
+	if (CurtainBlock.init) {
+		// Checks for localStorage and disables the curtain, if that option is toggled.
 		if (CurtainBlock.options.persistent) {
-			var confirmation = localStorage.getItem("alertConfirmed")
+			var confirmation = localStorage.getItem("curtainConfirm")
 			if (confirmation) {
 				$curtain.hide();
 				complete = 1;
 			};
 		};
+		// If we don't have the storage, run the CurtainThing.
 		if (complete === 0) {
-			$curtain.show();
+			// Show Everything (The Curtain is on by default.)
 			$confirm.show();
    			$deny.show();
 			$alert.fadeIn(500);
+			// Redirect / hide based on user input
 			$confirm.click(function () {
 				$curtain.fadeOut(750);
 				$alert.fadeOut(350);
+				// If we're persistent, set up the localStorage
 				if (CurtainBlock.options.persistent) {
-					localStorage.setItem("alertConfirmed", true);
+					localStorage.setItem("curtainConfirm", true);
 				};
 			});
 			$deny.click(function () {
@@ -59,6 +55,6 @@ $(document).ready(function () {
 		}
 	} else {
 		$curtain.hide();
-		console.log("The CurtainBlock.js code is here, but you didn't start it!~ Set CurtainBlock.init to true in your HTML to start it!")
+		console.log("The CurtainBlock.js code is here, but you didn't start it!~ Set CurtainBlock.init to true in your HTML to start it!");
 	}
 });
