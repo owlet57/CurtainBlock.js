@@ -23,7 +23,7 @@ CurtainBlock.js was devised initially as a method to hide all the content on a g
 
 The easiest method is just to add these 3 lines of code in your header:
 
-  <link rel="stylesheet" href="CurtainBlock.css" />
+    <link rel="stylesheet" href="CurtainBlock.css" />
 	<script src="CurtainBlock.js"></script>
 	<script>CurtainBlock.init = true;</script>
 
