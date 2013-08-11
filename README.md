@@ -66,6 +66,17 @@ Sets the use of persistence (via localStorage) to either on or off, so you can a
 	
 	CurtainBlock.options.persistent = true;
 
+### CurtainBlock.options.transparency
+
+Sets up a transparency option, so a user can see some of the content on your page if you want them to.
+
+* **Default:** *false*
+* **Options:** *true, false*
+
+*Example:*
+	
+	CurtainBlock.options.transparency = true;
+
 *** 
 
 ##### Special Thanks to The M Machine, Porter Robinson, and KOAN Sound for keeping me sane while I wrote this.

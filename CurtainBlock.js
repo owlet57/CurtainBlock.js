@@ -1,12 +1,13 @@
 // CurtainBlock.js
 // Written by Jeremy Mills
-
 // Options for easy access and setup
+
 CurtainBlock = {
   	init: false,
 	options: {
-		persistent: false, // Set this false by default yeah
-		redir: 'about:blank'
+		persistent: false, // Disable the alerts if you've confirmed it before
+		redir: 'about:blank', // Redirect URL on denial
+		transparency: false //15% transparency if you want it
 	},
 }
 $(document).ready(function () {
@@ -34,6 +35,9 @@ $(document).ready(function () {
    			$deny.show();
 			$alert.fadeIn(500);
 			// Redirect / hide based on user input
+			if (CurtainBlock.options.transparency) {
+				$curtain.css('background-color','rgba(0,0,0,0.85')
+			}
 			$confirm.click(function () {
 				$curtain.fadeOut(750);
 				$alert.fadeOut(350);
