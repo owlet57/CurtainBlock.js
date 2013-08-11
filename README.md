@@ -1,6 +1,6 @@
 # CurtainBlock.js
 ### Developed by Jeremy Mills (owlet57)
-### v1.0a1
+### v1.1
 #### A simple, flat, native way to block content from view until the user wants to see it.
 
 ## About CurtainBlock.js
