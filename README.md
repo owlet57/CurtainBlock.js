@@ -80,3 +80,4 @@ Sets up a transparency option, so a user can see some of the content on your pag
 *** 
 
 ##### Special Thanks to The M Machine, Porter Robinson, and KOAN Sound for keeping me sane while I wrote this.
+##### Additional thanks to ISky (aka Jaybud) for helping me test and work on this.
