@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CurtainBlock Demo</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../CurtainBlock.js"></script>
+		<script>
+			CurtainBlock.init = true;
+			CurtainBlock.options.redir = "http://blog.owlet57.com";
+			CurtainBlock.options.persistent = true;
+		</script>
+		<link rel="stylesheet" href="../CurtainBlock.css" />
+	</head>
+	<body>
+		<div class="CurtainBlock">
+		<div class="CurtainBlockAlert">
+			<!-- The Alert -->
+			<h1>Hey There!</h1>
+			<h2>This is a demo of CurtainBlock.js</h2>
+			<p>CurtainBlock.js is an elegant, flat solution for creating a curtain for your content, making sure your users can't see the content until they confirm they want to.</p>
+			<noscript>This website requires Javascript.</noscript>
+			<button class="CurtainBlockConfirm">Make the curtain go away!</button>
+			<button class="CurtainBlockDeny">Go elsewhere!</button>
+		</div>
+		</div>
+	</body>
+</html>

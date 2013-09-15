@@ -22,8 +22,7 @@ $(document).ready(function () {
 	if (CurtainBlock.init) {
 		// Checks for localStorage and disables the curtain, if that option is toggled.
 		if (CurtainBlock.options.persistent) {
-			var confirmation = localStorage.getItem("curtainConfirm")
-			if (confirmation) {
+			if (localStorage.getItem("curtainConfirm")) {
 				$curtain.hide();
 				complete = 1;
 			};
