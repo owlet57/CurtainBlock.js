@@ -15,9 +15,10 @@ CurtainBlock.js was devised initially as a method to hide all the content on a g
 
 ## Features
 
+* Lightweight
 * Easy to add to your existing code
-* 2 minute set up!
-* Use localStorage to check for previous visits, and don't display the warning
+* 2 minute setup!
+* Uses localStorage() for persistent confirm.
 
 ## Setup
 
@@ -53,7 +54,7 @@ Sets a url for CurtainBlock to redirect to in the event the user does not want t
 
 *Example:*
 
-	CurtainBlock.options.redir = "http://blog.owlet57.com"
+	CurtainBlock.options.redir = "http://blog.owlet57.com";
 
 ### CurtainBlock.options.persistent
 

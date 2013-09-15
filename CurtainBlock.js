@@ -3,7 +3,7 @@
 // Options for easy access and setup
 
 CurtainBlock = {
-  	init: false,
+	init: false,
 	options: {
 		persistent: false, // Disable the alerts if you've confirmed it before
 		redir: 'about:blank', // Redirect URL on denial
