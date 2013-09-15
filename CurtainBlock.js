@@ -1,23 +1,19 @@
 // CurtainBlock.js
-// Written by Jeremy Mills
-// Options for easy access and setup
+// Written by Jeremy Mills (owlet57)
 
+// Options for easy access and setup
 CurtainBlock = {
-  	init: false,
+  	init: function() {return true;},
 	options: {
-		persistent: false, // Disable the alerts if you've confirmed it before
-		redir: 'about:blank', // Redirect URL on denial
-		transparency: false //15% transparency if you want it
-	},
+		persistent: function() {return true;}, // Disable the alerts if you've confirmed it before
+		redir: function(url) {return url;}, // Redirect URL on denial
+		transparency: function() {return true;} // 15% transparency if you want it
+	}
 }
 $(document).ready(function () {
 	// Setup!
-	$curtain = $('.CurtainBlock');
-	$alert = $('.CurtainBlockAlert');
-	$confirm = $('.CurtainBlockConfirm');
-	$deny = $('.CurtainBlockDeny');
+	$curtain = $('.CurtainBlock'); $alert = $('.CurtainBlockAlert'); $confirm = $('.CurtainBlockConfirm'); $deny = $('.CurtainBlockDeny');
 	complete = 0;
-	// Core CurtainBlock methods, including the start
 	// Checks that CurtainBlock.js is setup properly
 	if (CurtainBlock.init) {
 		// Checks for localStorage and disables the curtain, if that option is toggled.
@@ -50,15 +46,15 @@ $(document).ready(function () {
 				// Redir function
 				if (CurtainBlock.options.redir.length === 0) {
 					// Redirect to a blank page
-					window.location.replace("about:blank")
+					window.location.replace("about:blank");
 				} else {
 					// Redirect to a page the dev specifies in their setup (by putting a string into CurtainBlock.redir)
-					window.location.replace(CurtainBlock.options.redir)
+					window.location.replace(CurtainBlock.options.redir);
 				}
 			});
 		}
 	} else {
 		$curtain.hide();
-		console.log("The CurtainBlock.js code is here, but you didn't start it!~ Set CurtainBlock.init to true in your HTML to start it!");
+		console.log("The CurtainBlock.js code is here, but you didn't start it!~ Call CurtainBlock.init() in your HTML to start it!");
 	}
 });
