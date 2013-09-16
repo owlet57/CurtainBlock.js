@@ -26,7 +26,7 @@ The easiest method is just to add these 3 lines of code in your header:
 
     <link rel="stylesheet" href="CurtainBlock.css" />
 	<script src="CurtainBlock.js"></script>
-	<script>CurtainBlock.init();</script>
+	<script>$(document).ready(function() {CurtainBlock();});
 
 And create the relevant divs and buttons:
 
@@ -51,18 +51,9 @@ Oh, and in case you've set up CurtainBlock.js to be in your HTML, but forget to 
 
 ## Options
 
-### CurtainBlock.options.redir
+CurtainBlock.js, as of v1.2, now just passes options in it's first call.  To set your options, just set them between the brackets.
 
-Sets a url for CurtainBlock to redirect to in the event the user does not want to continue ahead.
-
-* **Default:** *about:blank*
-* **Options:** *string*
-
-*Example:*
-
-	CurtainBlock.options.redir = "http://blog.owlet57.com";
-
-### CurtainBlock.options.persistent
+### Persistent
 
 Sets the use of persistence (via localStorage) to either on or off, so you can avoid displaying alerts to users who have already visited and accepted the warning.
 
@@ -71,9 +62,9 @@ Sets the use of persistence (via localStorage) to either on or off, so you can a
 
 *Example:*
 	
-	CurtainBlock.options.persistent = true;
+	CurtainBlock(true)
 
-### CurtainBlock.options.transparency
+### Transparent
 
 Sets up a transparency option, so a user can see some of the content on your page if you want them to.
 
@@ -82,7 +73,18 @@ Sets up a transparency option, so a user can see some of the content on your pag
 
 *Example:*
 	
-	CurtainBlock.options.transparency = true;
+	CurtainBlock(true,true)
+
+### Redirect URL
+
+Sets a url for CurtainBlock to redirect to in the event the user does not want to continue ahead.
+
+* **Default:** *about:blank*
+* **Options:** *string*
+
+*Example:*
+
+	CurtainBlock(true,true,"http://blog.owlet57.com")
 
 *** 
 

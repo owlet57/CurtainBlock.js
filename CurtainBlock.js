@@ -1,14 +1,12 @@
 // CurtainBlock.js
 // Written by Jeremy Mills
-var CurtainBlock = $.fn.init();
-$(function($) {
-	// Setup (for easy dev access)
+// Setup (for easy dev access)
+function CurtainBlock(persistent,transparency,redir) {
 	$curtain = $('.CurtainBlock');
 	$alert = $('.CurtainBlockAlert');
 	$confirm = $('.CurtainBlockConfirm');
 	$deny = $('.CurtainBlockDeny');
 	complete = 0;
-	this.init = function (persistent,transparency,redir) {
 		// Checks for localStorage and disables the curtain, if that option is toggled.
 		if (persistent) {
 			if (localStorage.getItem("curtainConfirm")) {
@@ -18,6 +16,7 @@ $(function($) {
 		};
 		// If we see that stored key, run the Curtain.
 		if (complete === 0) {
+			console.log("Debug");
 			$confirm.show();
    			$deny.show();
 			// Redirect / hide based on user input
@@ -34,14 +33,7 @@ $(function($) {
 			});
 			$deny.click(function () {
 				// Redir function
-				if (CurtainBlock.options.redir.length > 0) {
-					// Redirect to a blank page
-					window.location.replace(redir)
-				} else {
-					// Redirect to a page the dev specifies in their setup (by putting a string into CurtainBlock.redir)
-					window.location.replace("about:blank")
-				}
+				window.location.replace(redir);
 			});
 		}
 	}
-});
