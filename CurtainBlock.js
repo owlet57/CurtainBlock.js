@@ -16,7 +16,6 @@ function CurtainBlock(persistent,transparency,redir) {
 		};
 		// If we see that stored key, run the Curtain.
 		if (complete === 0) {
-			console.log("Debug");
 			$confirm.show();
    			$deny.show();
 			// Redirect / hide based on user input
