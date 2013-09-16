@@ -32,7 +32,6 @@ $(document).ready(function () {
 			// Show Everything (The Curtain is on by default.)
 			$confirm.show();
    			$deny.show();
-			$alert.fadeIn(500);
 			// Redirect / hide based on user input
 			if (CurtainBlock.options.transparency) {
 				$curtain.css('background-color','rgba(0,0,0,0.85')
