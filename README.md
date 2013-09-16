@@ -43,6 +43,12 @@ And you're done!
 
 Oh, and in case you've set up CurtainBlock.js to be in your HTML, but forget to initialize it, it will give you a friendly reminder to initialize it in the console.
 
+## What's new in v1.1.1
+
+* Minor edits to the documentation
+* Minor bug fixes and edits
+* New "minimal" version
+
 ## Options
 
 ### CurtainBlock.options.redir
