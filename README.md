@@ -26,7 +26,7 @@ The easiest method is just to add these 3 lines of code in your header:
 
     <link rel="stylesheet" href="CurtainBlock.css" />
 	<script src="CurtainBlock.js"></script>
-	<script>CurtainBlock.init = true;</script>
+	<script>CurtainBlock.init();</script>
 
 And create the relevant divs and buttons:
 
@@ -43,11 +43,11 @@ And you're done!
 
 Oh, and in case you've set up CurtainBlock.js to be in your HTML, but forget to initialize it, it will give you a friendly reminder to initialize it in the console.
 
-## What's new in v1.1.1
+## What's new in v1.2
 
-* Minor edits to the documentation
-* Minor bug fixes and edits
-* New "minimal" version
+* Easier starter call, with all your options on one line!
+* Hopefully a bit faster and more efficient
+* Cleaner code
 
 ## Options
 

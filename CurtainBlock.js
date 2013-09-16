@@ -1,12 +1,12 @@
 // CurtainBlock.js
 // Written by Jeremy Mills
-var CurtainBlock = new $.fn.init();
-(function($) {
+var CurtainBlock = $.fn.init();
+$(function($) {
 	// Setup (for easy dev access)
-	var $curtain = $('.CurtainBlock');
-	var $alert = $('.CurtainBlockAlert');
-	var $confirm = $('.CurtainBlockConfirm');
-	var $deny = $('.CurtainBlockDeny');
+	$curtain = $('.CurtainBlock');
+	$alert = $('.CurtainBlockAlert');
+	$confirm = $('.CurtainBlockConfirm');
+	$deny = $('.CurtainBlockDeny');
 	complete = 0;
 	this.init = function (persistent,transparency,redir) {
 		// Checks for localStorage and disables the curtain, if that option is toggled.
@@ -28,7 +28,7 @@ var CurtainBlock = new $.fn.init();
 				$curtain.fadeOut(750);
 				$alert.fadeOut(350);
 				// If we're persistent, set up the localStorage
-				if (CurtainBlock.options.persistent) {
+				if (persistent) {
 					localStorage.setItem("curtainConfirm", true);
 				};
 			});
