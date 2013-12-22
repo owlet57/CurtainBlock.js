@@ -1,5 +1,5 @@
 // CurtainBlock.js
-// Written by Jeremy Mills
+// Written by Jessie Mills
 // Setup (for easy dev access)
 function CurtainBlock(persistent,transparency,redir) {
 	$curtain = $('.CurtainBlock');
