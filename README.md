@@ -7,6 +7,11 @@
 
 CurtainBlock.js was devised initially as a method to hide all the content on a given page from anyone who might come stumbling onto a given page and not be willing to see the content on it. I primarily think people will use this for like adult blogs or whatever.
 
+## Demo
+
+A demo of this script can be [found here](http://owlet57.github.io/CurtainBlock.js)
+
+
 ## Requirements
 
 * A browser that runs JS
