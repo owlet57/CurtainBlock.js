@@ -26,7 +26,18 @@
 	text-align: center;
 }
 
-.CurtainBlock h1 {font-size: 30pt;}
-.CurtainBlock p {text-align: justify; font-size: 12pt;}
+.CurtainBlock h1 {
+	font-family: sans-serif; 
+	color: black;
+	font-size: 30pt;
+}
+
+.CurtainBlock p {
+	font-family: sans-serif; 
+	color: black; 
+	text-align: justify; 
+	font-size: 12pt;
+
+}
 .CurtainBlockConfirm {display: none;}
 .CurtainBlockDeny {display: none;}
