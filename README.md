@@ -30,7 +30,7 @@ The easiest method is just to add these 3 lines of code in your header:
 
     <link rel="stylesheet" href="CurtainBlock.css" />
 	<script src="CurtainBlock.min.js"></script>
-	<script>$(document).ready(function() {CurtainBlock();});
+	<script>CurtainBlock(true);
 
 And create the relevant divs and buttons:
 
