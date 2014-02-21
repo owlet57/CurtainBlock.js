@@ -28,19 +28,19 @@ A demo of this script can be [found here](http://owlet57.github.io/CurtainBlock.
 
 The easiest method is just to add these 3 lines of code in your header:
 
-    <link rel="stylesheet" href="CurtainBlock.css" />
+  <link rel="stylesheet" href="CurtainBlock.css" />
 	<script src="CurtainBlock.min.js"></script>
-	<script>CurtainBlock(true);
+	<script>CurtainBlock(true);</script>
 
 And create the relevant divs and buttons:
 
 	<div class="CurtainBlock">
-		<div class="CurtainBlockAlert">
-			<!-- The Alert -->
-			<noscript>This website requires Javascript.</noscript>
-			<button class="CurtainBlockConfirm"></button>
-			<button class="CurtainBlockDeny"></button>
-		</div>
+    <div class="CurtainBlockAlert">
+        <!-- The Alert -->
+        <noscript>This website requires Javascript.</noscript>
+        <button class="CurtainBlockConfirm"><!-- Confirm button text --></button>
+        <button class="CurtainBlockDeny"><!-- Deny button text --></button>
+    </div>
 	</div>
 
 And you're done!
