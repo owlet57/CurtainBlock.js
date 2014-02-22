@@ -1,7 +1,8 @@
 // CurtainBlock.js
-// Written by Jeremy Mills
+// Written by Jessie Mills
 // Setup (for easy dev access)
 function CurtainBlock(persistent,transparency,redir) {
+$(function() {
 	$curtain = $('.CurtainBlock');
 	$alert = $('.CurtainBlockAlert');
 	$confirm = $('.CurtainBlockConfirm');
@@ -36,3 +37,4 @@ function CurtainBlock(persistent,transparency,redir) {
 			});
 		}
 	}
+});

@@ -6,6 +6,7 @@
 	left: 0px;
 	width: 100%;
 	height: 100%;
+	z-index: 999;
 }
 
 /* You can totally change this to suit your needs though! */
@@ -21,10 +22,24 @@
 	-ms-box-shadow: 0px 0px 20px rgba(255,255,255,0.4);
 	box-shadow: 0px 0px 20px rgba(255,255,255,0.4);
 	font-family: sans-serif;
-	padding: 10px;
 	text-align: center;
 }
 
-.CurtainBlockAlert p {text-align: justify;}
+.CurtainBlock h1 {
+	font-family: sans-serif; 
+	color: black;
+	font-size: 30pt;
+	margin: 10px;
+}
+
+.CurtainBlock p {
+	font-family: sans-serif; 
+	color: black; 
+	text-align: justify; 
+	font-size: 12pt;
+	margin: 10px;
+
+}
+
 .CurtainBlockConfirm {display: none;}
 .CurtainBlockDeny {display: none;}

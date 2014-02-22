@@ -1,11 +1,15 @@
 # CurtainBlock.js
-### Developed by Jeremy Mills (owlet57)
-### v1.2 beta
+### Developed by Jessie Mills (owlet57)
+### v1.2.1
 #### A simple, flat, native way to block content from view until the user wants to see it.
 
 ## About CurtainBlock.js
 
-CurtainBlock.js was devised initially as a method to hide all the content on a given page from anyone who might come stumbling onto a given page and not be willing to see the content on it. I primarily think people will use this for like adult blogs or whatever.
+CurtainBlock.js was devised initially as a method to hide all the content on a given page from anyone who might come stumbling onto a given page and not be willing to see the content on it. I primarily think people will use this for adult blogs or whatever.
+
+## Demo
+
+A demo of this script can be [found here](http://owlet57.github.io/CurtainBlock.js)
 
 ## Requirements
 
@@ -25,8 +29,8 @@ CurtainBlock.js was devised initially as a method to hide all the content on a g
 The easiest method is just to add these 3 lines of code in your header:
 
     <link rel="stylesheet" href="CurtainBlock.css" />
-	<script src="CurtainBlock.js"></script>
-	<script>$(document).ready(function() {CurtainBlock();});
+	<script src="CurtainBlock.min.js"></script>
+	<script>CurtainBlock(true);
 
 And create the relevant divs and buttons:
 
