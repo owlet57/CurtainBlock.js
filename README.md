@@ -28,7 +28,7 @@ A demo of this script can be [found here](http://owlet57.github.io/CurtainBlock.
 
 The easiest method is just to add these 3 lines of code in your header:
 
-  <link rel="stylesheet" href="CurtainBlock.css" />
+    <link rel="stylesheet" href="CurtainBlock.css" />
 	<script src="CurtainBlock.min.js"></script>
 	<script>CurtainBlock(true);</script>
 
