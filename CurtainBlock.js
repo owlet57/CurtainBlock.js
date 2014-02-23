@@ -13,12 +13,12 @@ $(function() {
 			if (localStorage.getItem("curtainConfirm")) {
 				$curtain.hide();
 				complete = 1;
-			};
-		};
+			}
+		}
 		// If we see that stored key, run the Curtain.
 		if (complete === 0) {
 			$confirm.show();
-   			$deny.show();
+			$deny.show();
 			// Redirect / hide based on user input
 			if (transparency) {
 				$curtain.css('background-color','rgba(0,0,0,0.85');
@@ -29,7 +29,7 @@ $(function() {
 				// If we're persistent, set up the localStorage
 				if (persistent) {
 					localStorage.setItem("curtainConfirm", true);
-				};
+				}
 			});
 			$deny.click(function () {
 				// Redir function
@@ -37,4 +37,4 @@ $(function() {
 			});
 		}
 	}
-});
+)};
