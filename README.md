@@ -15,7 +15,7 @@ A demo of this script can be [found here](http://owlet57.github.io/CurtainBlock.
 
 * A browser that runs JS
 * localStorage support (most if not all modern browsers have this)
-* jQuery (I used 2.0.3 but you can use whatever)
+* jQuery (I used 2.0.3 in development but you can use whatever)
 
 ## Features
 
@@ -26,11 +26,15 @@ A demo of this script can be [found here](http://owlet57.github.io/CurtainBlock.
 
 ## Setup
 
-The easiest method is just to add these 3 lines of code in your header:
+The easiest method is just to add these 3 lines of code in at the end of the `<body>`:
 
-    <link rel="stylesheet" href="CurtainBlock.css" />
-	<script src="CurtainBlock.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="//owlet57.github.io/CurtainBlock/CurtainBlock.min.js"></script>
 	<script>CurtainBlock(true);</script>
+
+Add this to your `<head>`:
+
+	<link rel="stylesheet" href="//owlet57.github.io/CurtainBlock/CurtainBlock.css">
 
 And create the relevant divs and buttons:
 
