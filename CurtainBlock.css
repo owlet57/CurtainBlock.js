@@ -1,6 +1,6 @@
 /* I recommend you don't change the curtain but I won't stop you if you're gonna */
 .CurtainBlock {
-  background-color: black;
+	background-color: black;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -11,12 +11,17 @@
 
 /* You can totally change this to suit your needs though! */
 .CurtainBlockAlert {
+	position: relative;
 	background-color: rgb(255,255,255);
 	width: 500px;
-	height: 275px;
-	position: absolute;
-	margin: auto;
-	top: 0; left: 0; right: 0; bottom: 0;
+	max-width: 95%;
+	margin: 0 auto;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
 	-webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.4);
 	-o-box-shadow: 0px 0px 20px rgba(255,255,255,0.4);
 	-ms-box-shadow: 0px 0px 20px rgba(255,255,255,0.4);
