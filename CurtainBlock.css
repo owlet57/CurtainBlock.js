@@ -6,12 +6,14 @@
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: 999;
+	z-index: 99999999;
 }
 
 /* You can totally change this to suit your needs though! */
 .CurtainBlockAlert {
 	position: relative;
+	box-sizing: border-box;
+	padding: 25px;
 	background-color: rgb(255,255,255);
 	width: 500px;
 	max-width: 95%;
@@ -33,7 +35,7 @@
 .CurtainBlock h1 {
 	font-family: sans-serif; 
 	color: black;
-	font-size: 30pt;
+	font-size: 28px;
 	margin: 10px;
 }
 
@@ -41,10 +43,15 @@
 	font-family: sans-serif; 
 	color: black; 
 	text-align: justify; 
-	font-size: 12pt;
+	font-size: 16px;
 	margin: 10px;
-
 }
 
-.CurtainBlockConfirm {display: none;}
-.CurtainBlockDeny {display: none;}
+.CurtainBlockConfirm {
+	display: none;
+	padding: 10px;
+}
+.CurtainBlockDeny {
+	display: none;
+	padding: 10px;
+}
