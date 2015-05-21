@@ -1,3 +1,8 @@
+/* 
+CSS Version 1.2.1
+Written by Jessica Alouette <me@jessicaalouette.com>
+*/
+
 /* I recommend you don't change the curtain but I won't stop you if you're gonna */
 .CurtainBlock {
 	background-color: black;
@@ -13,6 +18,7 @@
 .CurtainBlockAlert {
 	position: relative;
 	box-sizing: border-box;
+	border-radius: 10px;
 	padding: 25px;
 	background-color: rgb(255,255,255);
 	width: 500px;
@@ -50,8 +56,15 @@
 .CurtainBlockConfirm {
 	display: none;
 	padding: 10px;
+	background-color: lightgrey;
+	font-weight: bold;
+	border: 0;
+	border-radius: 4px;
 }
 .CurtainBlockDeny {
 	display: none;
 	padding: 10px;
+	background-color: rgb(242, 151, 151);
+	border: 0;
+	border-radius: 4px;
 }
