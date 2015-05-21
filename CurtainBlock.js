@@ -1,7 +1,7 @@
 // CurtainBlock.js
 // Written by Jessica Alouette <me@jessicaalouette.com>
 
-// Version 1.1.1
+// Version 1.1.2
 
 // Setup
 function CurtainBlock(persistent,transparency,redir) {
@@ -18,7 +18,8 @@ $(function() {
 				$curtain.hide();
 				complete = 1;
 			}
-		} else if (complete === 0) {
+		} 
+		if (complete === 0) {
 			$confirm.show();
 			$deny.show();
 			// Redirect / hide based on user input
