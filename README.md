@@ -1,5 +1,5 @@
 # CurtainBlock.js
-### Developed by Jessie Mills (owlet57)
+### Developed by Jessica Alouette
 ### v1.2.2
 #### A simple, flat, native way to block content from view until the user wants to see it.
 
@@ -96,5 +96,5 @@ Sets a url for CurtainBlock to redirect to in the event the user does not want t
 
 *** 
 
-##### Special Thanks to The M Machine, Porter Robinson, and KOAN Sound for keeping me sane while I wrote this.
-##### Additional thanks to ISky (aka Jaybud) for helping me test and work on this.
+##### Special Thanks to The M Machine, Porter Robinson, and KOAN Sound for keeping me going while I wrote this.
+##### Additional thanks to Jaybud for helping me test and work on this.
